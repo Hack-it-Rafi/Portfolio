@@ -1,3 +1,4 @@
+import { FaDownload } from "react-icons/fa";
 const NavBar = () => {
     return (
         <div className="max-w-7xl mx-auto">
@@ -5,10 +6,9 @@ const NavBar = () => {
                 <div className="flex-1">
                     <img className="w-24" src="https://i.ibb.co/CB3Mjq2/81-r.png" alt="" />
                 </div>
-                <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-                    <div className="w-10 rounded-full">
-                        <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
-                    </div>
+                <div className="flex flex-col">
+                    <button className="btn"><FaDownload></FaDownload></button>
+                    <h1>Resume</h1>
                 </div>
             </div>
         </div>
